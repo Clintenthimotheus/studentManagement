@@ -1,0 +1,45 @@
+<!-- {{allstudent|json}} -->
+
+<form class="d-flex" role="search">
+    <input class="input" type="search" (keyup)="search($event)" placeholder=" Search" aria-label="Search">
+    <button class="btn btn-outline-dark" type="submit" style="margin-left: -90px; " > Search</button>
+</form>
+
+<div class="row">
+    <div class="col" *ngFor="let stu of allstudent|filter:searchKey:'name' ">
+
+
+        <div class="card" id="view" >
+            <img [src]="stu.image" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title text-center">{{stu.name}}</h5>
+                <div class="card my-3">
+                    <!-- <ul class="list-group list-group-flush">
+                        
+                        <li class="list-group-item">GENDER : {{stu.genderId}}</li>
+                    
+                    </ul> -->
+                    <!-- <ul class="list-group list-group-flush">
+                        <li class="list-group-item">FATHER NAME : {{stu.fatherName}}</li>
+                        <li class="list-group-item">MOTHER NAME : {{stu.motherName}}</li>
+                    </ul> -->
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">ROLL NO : {{stu.id}}</li>
+                        <!-- <li class="list-group-item">DATE OF BIRTH : {{stu.dateOfBirth}}</li> -->
+                        <!-- <li class="list-group-item">DEPARTMENT : {{stu.departmentid}}</li> -->
+                        <li class="list-group-item">EMAIL : {{stu.email}}</li>
+                        <li class="list-group-item">PHONE NUMBER : {{stu.phoneNumber}}</li>
+
+                    </ul>
+
+                  
+                    <button type="button" class="btn btn-outline-primary text-center my-3" routerLink="/mainComponent/viewPage/viewFullDetails/{{stu.id}}">View</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

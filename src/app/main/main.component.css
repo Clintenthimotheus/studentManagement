@@ -1,0 +1,218 @@
+.col-name {
+    font-size: 30px;
+    padding: 41px 0px 35px 131px;
+    font-weight: 700;
+    color: white;
+    animation: slide-left 3s ease-in-out alternate;
+}
+
+@keyframes slide-left {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#image-college img{
+    margin: -14px 29px 130px 92px;
+    animation: slide-right 3s ease-in-out alternate;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0)
+}
+}
+.main {
+    background-image: url("https://wallpaperaccess.com/full/3492868.gif");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-6 img {
+    height: 23rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+}
+
+.head-definition {
+    color: white;
+    font-weight: 200;
+    font-family: monospace;
+    padding: 5px 4px 10px 113px;
+    text-align: justify;
+    animation: slide-left 3s ease-in-out alternate;
+
+}
+
+.col-name1 {
+    font-size: 50px;
+    padding: 41px 0px 5px 131px;
+    font-weight: 700;
+    color: black;
+   
+}
+
+
+.col-name1-hidden{
+    display: none;
+}
+
+.col-name2 {
+    padding: 1px 0px 35px 131px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: math;
+    color: rgb(115, 115, 190);
+
+}
+
+.col-2 img {
+    /* border-radius: 50%; */
+    height: 97px;
+    width: 110px;
+}
+
+.col-2 img:hover {
+    border-radius: 50%;
+    border: 4px solid rgb(115, 115, 190);
+}
+
+.img-title {
+    margin: 1rem 0rem 3rem 2rem;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: none;
+    color: black;
+}
+
+.img-title1 {
+    margin: 1rem 0rem 3rem 0rem;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: none;
+    color: black;
+}
+
+.img-title2 {
+    margin: 1rem 0rem 3rem 1rem;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: none;
+    color: black;
+}
+
+.img-title3 {
+    margin: 1rem 0rem 3rem 0rem;
+    font-size: 21px;
+    font-weight: 100;
+    font-family: none;
+    color: black;
+}
+
+.col-3 img {
+    height: 8rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+}
+
+.images {
+    background-image: url("https://cdn.dribbble.com/users/259723/screenshots/3364617/rotation05.gif");
+    height: 27rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.images1 {
+    background-image: url("https://www.researchgate.net/publication/361234513/figure/fig5/AS:1166812247015436@1655201126231/Growth-of-college-students-listening-performance.jpg");
+    height: 27rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3rem;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#contai {
+    margin-left: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+}
+
+#diagram {
+    margin-top: 15rem;
+}
+@media (768px <= width<=1024px){
+    .main{
+        width: 77rem;
+    }
+    .col-name{
+        font-size: 28px;
+        padding: 41px 0px 35px 65px;
+    }
+    .head-definition{
+        padding: 3px 24px 3px 50px;
+    }
+    #image-college img{
+        margin-left: -3px;
+    }
+    #contai{
+        margin-left: 11rem;
+    }
+    .col-name1{
+        padding-left: 180px;
+    }
+    .col-name2{
+        padding-left: 184px;
+    }
+    .carousel.pointer-event{
+        width: 77rem;
+    }
+    .img-title3{
+        font-size: 18px;
+    }
+    .img-title {
+        font-size: 18px;
+    }
+    .img-title1 {
+        font-size: 18px;
+    }
+    .img-title2 {
+        font-size: 18px;
+    }
+}
+@media ( 425px<= width<=768px){
+#iconsrow{
+    width: 57rem
+}
+.images{
+    width: 35rem;
+}
+.images1{
+    width: 37rem;
+    margin-left: 13rem;
+    height: 27rem;
+}
+}
+@media ( 375px<= width<=425px){
+    img{
+        height: 72px;
+    }
+}

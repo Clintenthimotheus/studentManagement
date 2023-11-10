@@ -1,0 +1,120 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "image": "https://media.istockphoto.com/id/1342062117/photo/smart-arab-guy-student-with-backpack-and-books.jpg?s=612x612&w=0&k=20&c=a_p44WlIih_t4Y5TjyKY2LFqhgadWsJl6-HsZFiHeVo=",
+      "name": "Ajmal Sha",
+      "genderId": "1",
+      "dateOfBirth": "01-05-1998",
+      "fatherName": "Shaaaju",
+      "motherName": "Sheela",
+      "email": "Ajmalsha@gmail.com",
+      "phoneNumber": 7510445344,
+      "departmentId": "1"
+    },
+    {
+      "id": 2,
+      "image": "https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png",
+      "name": "Hari Krishnan",
+      "genderId": "1",
+      "dateOfBirth": "26-03-1999",
+      "fatherName": "Viju",
+      "motherName": "Geetha",
+      "email": "HariKrishnan@gmail.com",
+      "phoneNumber": 7510445345,
+      "departmentId": "4"
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/intellectual-man-reading-book-sitting-library-front-bookshelves-with-cup-coffee-hands_496169-1240.jpg",
+      "name": "Arjun",
+      "genderId": "1",
+      "dateOfBirth": "26-08-2000",
+      "fatherName": "Ashokan",
+      "motherName": "Leela",
+      "email": "Arjunashokan@gmail.com",
+      "phoneNumber": 7510445346,
+      "departmentId": "1"
+    },
+    {
+      "id": 4,
+      "image": "https://media.istockphoto.com/id/641755174/photo/young-student-woman.jpg?s=612x612&w=0&k=20&c=2oJocTs2oHyqYsVl9LTNGaBcA5FINNF0fZuH4kNpT2Y=",
+      "name": "Megha",
+      "genderId": 2,
+      "dateOfBirth": "26-09-1997",
+      "fatherName": "Raj",
+      "motherName": "Sumitha",
+      "email": "Megharaj@gmail.com",
+      "phoneNumber": 7510445347,
+      "departmentId": "3"
+    },
+    {
+      "id": 5,
+      "image": "https://img.freepik.com/premium-photo/woman-reading-book-library_123211-3375.jpg",
+      "name": "Smiji",
+      "genderId": "2",
+      "dateOfBirth": "22-09-1998",
+      "fatherName": "Soman",
+      "motherName": "Leela",
+      "email": "Smijisoman@gmail.com",
+      "phoneNumber": 7510445348,
+      "departmentId": "4"
+    },
+    {
+      "id": 6,
+      "image": "https://cdn.pixabay.com/photo/2018/06/27/07/45/college-student-3500990_640.jpg",
+      "name": "Febi",
+      "genderId": "1",
+      "dateOfBirth": "02-01-1998",
+      "fatherName": "Jacob",
+      "motherName": "Siji",
+      "email": "Febijacob@gmail.com",
+      "phoneNumber": 7510445349,
+      "departmentId": "2"
+    },
+    {
+      "id": 7,
+      "image": "https://www.purdueglobal.edu/blog/student-life/student_life05.jpg",
+      "name": "Sanju",
+      "genderId": "1",
+      "dateOfBirth": "26-08-1998",
+      "fatherName": "Kumar",
+      "motherName": "sheela",
+      "email": "Sanjukumar@gmail.com",
+      "phoneNumber": 7510445340,
+      "departmentId": "3"
+    }
+  ],
+  "department": [
+    {
+      "id": "1",
+      "batch": "Mechanical Engineering"
+    },
+    {
+      "id": "2",
+      "batch": "Civil Engineering"
+    },
+    {
+      "id": "3",
+      "batch": "Computer Science & Engineering"
+    },
+    {
+      "id": "4",
+      "batch": "Chemical Engineering"
+    }
+  ],
+  "gender": [
+    {
+      "id": "1",
+      "type": "Male"
+    },
+    {
+      "id": "2",
+      "type": "Female"
+    },
+    {
+      "id": "3",
+      "type": "Others"
+    }
+  ]
+}

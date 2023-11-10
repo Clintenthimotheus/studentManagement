@@ -1,0 +1,111 @@
+<!-- {{contact|json}} -->
+<h1 class="text-center my-3">Edit Student Details</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+
+            <div class="card" id="view">
+                <div class="card-body">
+                    <h5 class="card-title text-center"></h5>
+                    <div class="card my-3">
+                        <form action="">
+                            <div class="form-floating mb-3 my-3">
+                                <input [(ngModel)]="student.id" name="id" type="number" class="form-control"
+                                    id="floatingInput1" placeholder="ID">
+                                <label for="floatingInput1">ID</label>
+                            </div>
+                            <div class="form-floating mb-3 my-3">
+                                <input [(ngModel)]="student.name" name="name" type="text" class="form-control"
+                                    id="floatingInput1" placeholder="Full Name">
+                                <label for="floatingInput1">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3 ">
+                                <input [(ngModel)]="student.image" name="photourl" type="text" class="form-control"
+                                    id="floatingphoto" placeholder="Photo Url">
+                                <label for="floatingphoto">Photo Url</label>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <select class="form-control" [(ngModel)]="student.genderId" name="genderId">
+                                    <option selected hidden and disabled>Select</option>
+                                    <option [value]="gen.id" *ngFor="let gen of genders">{{gen.type}}</option>
+                                    <!-- <option value=>Female</option>
+                                    <option value=>Others</option> -->
+                                </select>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input [(ngModel)]="student.dateOfBirth" name="Date of Birth" type="date"
+                                    class="form-control" id="floatingbirth" placeholder="name@example.com">
+                                <label for="floatingbirth">Date of Birth</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input [(ngModel)]="student.fatherName" name="Father Name" type="text"
+                                    class="form-control" id="floatingfather" placeholder="Father Name">
+
+                                <label for="floatingfather">Father Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input [(ngModel)]="student.motherName" name="Mother Name" type="text"
+                                    class="form-control" id="floatingmother" placeholder="Mother Name">
+
+                                <label for="floatingfather">Mother Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input [(ngModel)]="student.email" name="email" type="email" class="form-control"
+                                    id="floatingemail" placeholder="name@example.com">
+                                <label for="floatingemail">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input [(ngModel)]="student.phoneNumber" name="phone" type="number" class="form-control"
+                                    id="floatingMobile" placeholder="Mobile">
+                                <label for="floatingMobile">Mobile</label>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <select class="form-control"  [(ngModel)]="student.departmentId" name="departmentId" >
+                                    <option selected hidden and disabled>Select </option>
+                                    <option [value]="dep.id" *ngFor="let dep of departments" >{{dep.batch}} </option>
+                                    <!-- <option value=>Civil Engineering</option>
+                                    <option value=>Computer Science & Engineering</option>
+                                    <option value=>Chemical Engineering
+
+                                    </option> -->
+                                </select>
+                            </div>
+                            <div style="display: flex; justify-content: space-around;">
+                                <button (click)="updateStudent()"   type="button" class="btn btn-outline-dark text-center my-3" routerLink="/mainComponent/viewPage/:id" >
+                                    <i class="fa-solid fa-pen-to-square" ></i> Submit</button>
+
+                                <button type="button" class="btn btn-outline- text-center my-3" routerLink="/mainComponent/viewPage/:id">
+                                    <i class="fa-solid fa-pen-to-square"></i> Back</button>
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </form>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+
+
+            <img [src]="student.image" class="card-img-top"
+                alt="...">
+
+
+        </div>
+    </div>
+</div>

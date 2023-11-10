@@ -1,0 +1,22 @@
+.container-fluid{
+    background-color: rgb(242,241,239);
+}
+img{
+    height: 97px;
+}
+
+.nav-item{
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+}
+.navbar-brand{
+    font-family: 'PT Serif', serif;
+    font-weight: 800;
+}
+
+@media (768px <= width<=1024px){
+    .navbar-expand-lg {
+        width: 77rem;
+    }
+  
+}

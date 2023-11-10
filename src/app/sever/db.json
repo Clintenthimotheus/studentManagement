@@ -1,0 +1,84 @@
+{
+  "students": [
+    {
+      "departmentId": "3",
+      "genderId": "2",
+      "id": 11,
+      "name": "Smiji Soman",
+      "image": "https://img.freepik.com/free-photo/happy-young-female-student-holding-notebooks-from-courses-smiling-camera-standing-spring-clothes-against-blue-background_1258-70161.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=sph",
+      "dateOfBirth": "1998-01-11",
+      "fatherName": "Soman",
+      "motherName": "shiji",
+      "email": "smiji house",
+      "phoneNumber": 1845454654
+    },
+    {
+      "departmentId": "3",
+      "genderId": "1",
+      "id": 101,
+      "name": "Krishn Raj",
+      "image": "https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.webp?b=1&s=170667a&w=0&k=20&c=RrvtNNmwGSJQn58gdYYM3xP-IVUIdKj29G4aJw-jJsE=",
+      "dateOfBirth": "1996-02-12",
+      "fatherName": "Raj",
+      "motherName": "sheela",
+      "email": "raj house",
+      "phoneNumber": 65666565665
+    },
+    {
+      "departmentId": "3",
+      "genderId": "1",
+      "id": 1,
+      "name": "Hari Krishnan",
+      "image": "https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png",
+      "dateOfBirth": "1998-05-12",
+      "fatherName": "Viju",
+      "motherName": "Geetha",
+      "email": "Hari home",
+      "phoneNumber": 88848448845
+    },
+    {
+      "departmentId": "3",
+      "genderId": "1",
+      "id": 10,
+      "name": "Vishnu",
+      "image": "https://st2.depositphotos.com/4431055/11856/i/450/depositphotos_118566586-stock-photo-student-man-with-laptop.jpg",
+      "dateOfBirth": "1968-05-12",
+      "fatherName": "Das",
+      "motherName": "Devika",
+      "email": "Das house",
+      "phoneNumber": 8484858555
+    }
+  ],
+  "department": [
+    {
+      "id": "1",
+      "batch": "Mechanical Engineering"
+    },
+    {
+      "id": "2",
+      "batch": "Civil Engineering"
+    },
+    {
+      "id": "3",
+      "batch": "Computer Science & Engineering"
+    },
+    {
+      "id": "4",
+      "batch": "Chemical Engineering"
+    }
+  ],
+  "gender": [
+    {
+      "id": "1",
+      "type": "Male"
+    },
+    {
+      "id": "2",
+      "type": "Female"
+    },
+    {
+      "id": "3",
+      "type": "Others"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+                                StudentManagement
+                        --------------------------------
+
+    1. create new project
+            -ng new studentManagement
+
+     2.Enter in to project
+              cd studentManagement
+        
+    3.vs code 
+            code .
+        
+     4.run the project
+          ng s -of
+
+    5.Clear app.component.html
+
+    6.install third party apps such as bootstrap,fontawesome and googlefont
+
+         <!-- bootstrap -->
+
+        install link:- npm i bootstrap(terminal)
+
+        angular json(node_modules->bootstrap->dis)-
+        "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
+
+add html:-
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+         <!-- fontawesome -->
+         install link:-(docs->web->using a package manager->The Free Package)npm install --save @fortawesome/fontawesome-free
+ add html:-
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+         <!-- googlefont -->
+
+          @import->copy
+          past->style.css
+        
+
+    7. create component
+        main - ng g c main
+        footer - ng g c footer
+        header - ng g c header
+        page not found- ng g c pageNotFound
+
+        edit- ng g c edit
+        view - ng g c viewPage
+        add-ng g c add
+
+   8.open app.component.html
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+
+   9.give path to component
+     app-routing.module.ts->
+     const routes: Routes = [
+  { //localhost:4200->http://localhost:4200/mainComponent
+    path:'',redirectTo:'mainComponent',pathMatch:"full"
+  },
+  { //main page
+    path:'mainComponent',component:MainComponent
+  },
+  {// add student
+    path:'mainComponent/addStudent',component:AddComponent
+  },
+  { // edit student
+    path:'mainComponent/editStudent/:id',component:EditComponent
+  },
+  { //view page
+    path:'mainComponent/viewPage/:id',component:ViewPageComponent
+  },
+  { //page not found
+    path:'**',component:PageNotFoundComponent
+  }
+];

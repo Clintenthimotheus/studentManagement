@@ -1,0 +1,54 @@
+.list-group-item:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+.list-group-item {
+    border: 1px solid black;
+}
+
+.st {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0px;
+    /* text-align: center; */
+    border: 1px solid black;
+    padding: 3px 0px 0px 15px
+
+}
+
+.st:hover {
+    background-color: dimgray;
+}
+
+.main-span {
+    display: flex;
+}
+
+h5{
+    font-weight: 900;
+}
+#view{
+    width: 24rem;
+    margin-left: 8rem;
+    margin-top: 2rem; 
+}
+.input{
+    width: 56rem;
+    padding-left: 23px;
+    box-shadow: inset -5px -5px 12px black, inset 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    margin-left: 17rem;
+    border-radius: 14px;
+    margin-top: 2rem;
+    height: 51px;
+}
+.d-flex button{
+    border-radius: 14px;
+    margin-top: 2rem;
+    height: 51px;
+    width: 89px;
+}
+button::placeholder{
+    margin-left: 20px;
+}

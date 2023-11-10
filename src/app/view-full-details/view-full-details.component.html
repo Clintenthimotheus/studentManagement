@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <img [src]="studentview.image"
+                class="card-img-top" alt="...">
+        </div>
+        <div class="col-6">
+            <div class="card" id="view">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{studentview.name}}</h5>
+                    <div class="card my-3" >
+                        <ul class="list-group list-group-flush " >
+                            <li class="list-group-item">ROLL NO :<span >{{studentview.id}}</span> </li>
+                            <li class="list-group-item">GENDER :<span >{{genderName}} </span></li>
+                            
+
+                            <!-- <span class="main-span">
+                            <span class="st">GENDER : </span><span class="st">BLOOD-GROUP : </span>
+                        </span> -->
+
+                            <li class="list-group-item">FATHER NAME :<span >{{studentview.fatherName}}</span></li>
+                            <li class="list-group-item">MOTHER NAME :<span >{{studentview.motherName}}</span></li>
+
+
+
+                            <li class="list-group-item">DATE OF BIRTH :<span >{{studentview.dateOfBirth}}</span> </li>
+                            <li class="list-group-item">DEPARTMENT :<span >{{departmentName}}</span></li>
+                            <li class="list-group-item">EMAIL :<span >{{studentview.email}}</span> </li>
+                            <li class="list-group-item">PHONE NUMBER:<span >{{studentview.phoneNumber}}</span> </li>
+
+                        </ul>
+
+                        <!-- <span class="main-span">
+                            <span class="st">DISTRICT : </span><span class="st">STATE :</span>
+                        </span> -->
+                        <div style="display: flex; justify-content: space-around;">
+
+                            <button type="button" class="btn btn-outline-primary text-center my-3"
+                                routerLink="/mainComponent/editStudent/{{studentview.id}}" ><i
+                                    class="fa-solid fa-pen-to-square"></i> Edit</button>
+
+                                    <button type="button" class="btn btn-outline-dark text-center my-3"
+                                    routerLink="/mainComponent/viewPage/:id"><i
+                                        class="fa-solid fa-pen-to-square"></i> Back</button>
+
+                            <button (click)="deleteStudent(studentview.id)" type="button" routerLink="/mainComponent/viewPage/:id" class="btn btn-outline-danger text-center my-3"><i
+                                    class="fa-solid fa-trash"></i> Delete</button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
